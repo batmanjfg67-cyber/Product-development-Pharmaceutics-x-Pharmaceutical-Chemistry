@@ -1,1 +1,0 @@
-# Product-development-Pharmaceutics-x-Pharmaceutical-Chemistry
