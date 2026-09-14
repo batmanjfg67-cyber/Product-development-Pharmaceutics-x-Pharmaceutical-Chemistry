@@ -12045,3 +12045,223 @@ body {
     }
 
 }
+
+
+/* =========================================================
+   IMPACT PAGE — REFERENCES
+========================================================= */
+
+.impact-references {
+    width: min(1100px, 90%);
+    margin: 100px auto 80px;
+}
+
+
+/* ---------- Header ---------- */
+
+.references-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.references-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #28c7c9;
+}
+
+.references-header h2 {
+    margin: 0 0 15px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #061d29;
+}
+
+.references-header p {
+    margin: 0 auto;
+    max-width: 680px;
+    line-height: 1.7;
+    font-size: 0.98rem;
+    color: #5f737b;
+}
+
+
+/* ---------- Reference list ---------- */
+
+.references-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* ---------- Individual reference ---------- */
+
+.reference-card {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 25px;
+    align-items: start;
+
+    padding: 28px 30px;
+
+    background: #ffffff;
+    border: 1px solid rgba(6, 29, 41, 0.09);
+    border-radius: 18px;
+
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow: 0 8px 25px rgba(6, 29, 41, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* ---------- Hover ---------- */
+
+.reference-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(40, 199, 201, 0.45);
+
+    box-shadow:
+        0 14px 35px rgba(6, 29, 41, 0.09);
+}
+
+
+/* ---------- Number ---------- */
+
+.reference-number {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e9f7f7;
+    color: #118f95;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+
+/* ---------- Content ---------- */
+
+.reference-content {
+    min-width: 0;
+}
+
+.reference-organisation {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #118f95;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.reference-content h3 {
+    margin: 0 0 10px;
+
+    color: #061d29;
+
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.reference-content p {
+    margin: 0 0 14px;
+
+    max-width: 900px;
+
+    color: #65777e;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- Official source link ---------- */
+
+.reference-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #118f95;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    transition: gap 0.2s ease;
+}
+
+.reference-card:hover .reference-link {
+    gap: 10px;
+}
+
+.reference-link span {
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .impact-references {
+        width: 90%;
+        margin: 70px auto 60px;
+    }
+
+    .references-header {
+        margin-bottom: 30px;
+    }
+
+    .references-header h2 {
+        font-size: 2rem;
+    }
+
+    .reference-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+        padding: 23px 22px;
+        border-radius: 15px;
+    }
+
+    .reference-number {
+        width: 44px;
+        height: 44px;
+        font-size: 0.78rem;
+    }
+
+    .reference-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .reference-content p {
+        font-size: 0.85rem;
+        line-height: 1.65;
+    }
+}
